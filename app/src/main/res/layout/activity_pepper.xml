@@ -12,7 +12,7 @@
         android:id="@+id/titleBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFEB3B"
+        android:background="#6750A3"
         android:orientation="vertical"
         android:padding="16dp">
 
@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="AGRIHELP - Pepper"
-            android:textColor="#3F51B5"
+            android:textColor="#FEFAFD"
             android:textSize="20sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -32,8 +32,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="previous_icon"
+            android:background="@android:color/transparent"
             android:layout_marginTop="25dp"
-            android:src="@android:drawable/ic_media_previous"
+            android:src="@drawable/prev_button"
             android:layout_gravity="center_vertical"/>
         <ImageSwitcher
             android:id="@+id/image"
@@ -49,7 +50,8 @@
             android:layout_height="wrap_content"
             android:contentDescription="next_icon"
             android:layout_marginTop="25dp"
-            android:src="@android:drawable/ic_media_next"
+            android:src="@drawable/next_button"
+            android:background="@android:color/transparent"
             android:layout_gravity="center_vertical"/>
     </LinearLayout>
     <!--click here to view previous image-->
@@ -70,7 +72,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:contentDescription="camera_icon"
-            android:src="@android:drawable/ic_menu_camera" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/camera" />
 
         <ImageButton
             android:id="@+id/galleryButton"
@@ -78,7 +81,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:contentDescription="gallery_icon"
-            android:src="@android:drawable/ic_menu_gallery" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/gallery" />
     </LinearLayout>
 
 

@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 if (position < mArrayUri.size() - 1) {
                     // increase the position by 1
                     position++;
-                    Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(position)), 700, 700);
+                    Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(position)), 700, 800);
                     Uri imageTempURI=getImageUri(resizedBitmap);
                     imageView.setImageURI(imageTempURI);
 
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                 if (position > 0) {
                     // decrease the position by 1
                     position--;
-                    Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(position)), 700, 700);
+                    Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(position)), 700, 800);
                     Uri imageTempURI=getImageUri(resizedBitmap);
                     imageView.setImageURI(imageTempURI);
                     // Update the TextView with the current image number and total count
@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
                         position--;
                     }
                     if (mArrayUri.size() > 0) {
-                        Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(position)), 700, 700);
+                        Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(position)), 700, 800);
                         Uri imageTempURI=getImageUri(resizedBitmap);
 
                         imageView.setImageURI(imageTempURI);
@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
                     modelOutputs.add(classifyImage(imag));
                 }
                 //imageView.setImageURI(mArrayUri.get(0));
-                Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(0)), 700, 700);
+                Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(0)), 700, 800);
                 Uri imageTempURI=getImageUri(resizedBitmap);
                 imageView.setImageURI(imageTempURI);
                 position = 0;
@@ -273,7 +273,7 @@ public class MainActivity extends AppCompatActivity {
                     mArrayUri.add(imageUri);
                 }
                 // setting 1st selected image into image switcher
-                Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(0)), 700, 700);
+                Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(0)), 700, 800);
                 Uri imageTempURI=getImageUri(resizedBitmap);
                 imageView.setImageURI(imageTempURI);
 //                imageView.setImageURI(mArrayUri.get(0));
@@ -283,7 +283,7 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 Uri imageUri = data.getData();
                 mArrayUri.add(imageUri);
-                Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(position)), 700, 700);
+                Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(position)), 700, 800);
                 Uri imageTempURI=getImageUri(resizedBitmap);
                 imageView.setImageURI(imageTempURI);
                 position = 0;
@@ -297,7 +297,7 @@ public class MainActivity extends AppCompatActivity {
             if(imageUri != null){
                 mArrayUri.add(imageUri);
 
-                Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(position)), 700, 700);
+                Bitmap resizedBitmap = resizeBitmap(uriToBitmap(mArrayUri.get(position)), 700, 800);
                 Uri imageTempURI=getImageUri(resizedBitmap);
                 imageView.setImageURI(imageTempURI);
                 // Update the TextView with the current image number and total count
