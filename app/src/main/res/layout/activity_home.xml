@@ -15,6 +15,15 @@
     <!-- Image Pepper -->
 
     <!-- Title Bar -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textColor="#6750A3"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="How to Use?"
+        android:paddingLeft="14dp"/>
     <ImageView
         android:id="@+id/instructions"
         android:layout_width="400dp"
@@ -56,23 +65,49 @@
         android:layout_marginTop="500dp"
         android:src="@drawable/pepper" />
 
-    <LinearLayout
+<!--    <LinearLayout-->
+<!--        android:id="@+id/titleBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#6750A3"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="16dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="AGRIHELP - Heal Your Crop"-->
+<!--            android:textColor="#FEFAFD"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+<!--        <ImageView-->
+<!--            android:id="@+id/infoIcon"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/prev_button"-->
+<!--            android:layout_marginTop="-40dp"-->
+<!--            android:layout_marginLeft="320dp"-->
+<!--            android:contentDescription="info_icon"-->
+<!--            android:onClick="showContextMenu" />-->
+<!--    </LinearLayout>-->
+    <RelativeLayout
         android:id="@+id/titleBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#6750A3"
-        android:orientation="vertical"
         android:padding="16dp">
 
         <TextView
+            android:id="@+id/titleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="AGRIHELP - Heal Your Crop"
             android:textColor="#FEFAFD"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
-    </LinearLayout>
 
+
+    </RelativeLayout>
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"

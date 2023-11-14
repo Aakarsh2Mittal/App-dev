@@ -8,22 +8,40 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".PepperActivity">
-    <LinearLayout
+<!--    <LinearLayout-->
+<!--        android:id="@+id/titleBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#6750A3"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="16dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="AGRIHELP - Pepper"-->
+<!--            android:textColor="#FEFAFD"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </LinearLayout>-->
+    <RelativeLayout
         android:id="@+id/titleBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#6750A3"
-        android:orientation="vertical"
         android:padding="16dp">
 
         <TextView
+            android:id="@+id/titleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="AGRIHELP - Pepper"
             android:textColor="#FEFAFD"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
-    </LinearLayout>
+
+
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -82,6 +100,7 @@
             android:layout_marginStart="8dp"
             android:contentDescription="gallery_icon"
             android:background="@android:color/transparent"
+            android:layout_marginTop="2dp"
             android:src="@drawable/gallery" />
     </LinearLayout>
 
