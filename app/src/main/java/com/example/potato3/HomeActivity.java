@@ -7,14 +7,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toolbar;
-
+import android.widget.ImageView;
 
 public class HomeActivity extends AppCompatActivity {
-
+    private ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        imageView = findViewById(R.id.imageView);
+        Button instruct = findViewById(R.id.instruct);
+        instruct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                imageView.setImageResource(R.drawable.instructions); // Replace "your_image" with your image resource
+                if (imageView.getVisibility() == View.VISIBLE) {
+                    imageView.setVisibility(View.GONE);
+                } else {
+                    imageView.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
 
         // Button 1 Click Listener
         Button button1 = findViewById(R.id.button1);
