@@ -21,7 +21,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                imageView.setImageResource(R.drawable.instructions); // Replace "your_image" with your image resource
+                imageView.setImageResource(R.drawable.instructions);
                 if (imageView.getVisibility() == View.VISIBLE) {
                     imageView.setVisibility(View.GONE);
                 } else {
