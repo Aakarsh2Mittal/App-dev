@@ -10,4 +10,4 @@
 
    ![image](https://github.com/harshulmidha/ML-UGP23-App-Dev/assets/80706057/ba85a8f1-3fdd-4abf-ad39-6580a92129a3)
 9. File Explorer will open with two folders. Go to the "debug" folder and transfer the "app-debug.apk" to your Android mobile device using any file transfer system (e.g. Whatsapp Web/Desktop).
-10. Install the "app-debug.apk" on your Android mobile device. ("Allow installing apps from Unknown Sources" permission will need to be given) and run the APK. 
+10. Install the "app-debug.apk" on your Android mobile device. ("Allow installing apps from Unknown Sources" permission will need to be given) and run the APK file. 
